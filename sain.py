@@ -105,10 +105,7 @@ def menu():
                                 except:
                                         ps_limit =1
                                 linex()
-                                print('\033[1;32m exp: first last,firtslast,first123')
-                                linex()
-                                for i in range(ps_limt):
-                                        plist.append(inpu(f' Put password {i+1}: '))
+                                (f' Put password {i+1}: '))
                                 linex()
                                print(' Do you went show cp account? (y/n): ')
                                linex()
